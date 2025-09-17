@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/headlineFragment">
+
+    <fragment
+        android:id="@+id/headlineFragment"
+        android:name="com.example.newsapppro.ui.fragments.HeadlineFragment"
+        android:label="Headlines"
+        tools:layout="@layout/fragment_headline" />
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.newsapppro.ui.fragments.ArticleFragment"
+        android:label="Article"
+        tools:layout="@layout/fragment_article">
+        <argument
+            android:name="article"
+            app:argType="com.example.newsapppro.models.Article" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.newsapppro.ui.fragments.search"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_search_to_article"
+            app:destination="@id/articleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.newsapppro.ui.fragments.FavoriteFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_favorite" />
+
+    <!-- ✅ New ProfileFragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.newsapppro.ui.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

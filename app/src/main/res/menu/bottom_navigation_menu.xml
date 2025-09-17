@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/headlineFragment"
+        android:title="Headlines"
+        android:icon="@drawable/baseline_headline_24" />
+
+    <item
+        android:id="@+id/favouritesFragment"
+        android:title="Favourites"
+        android:icon="@drawable/baseline_favourite" />
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/baseline_search" />
+
+    <!-- ✅ New Profile Section -->
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24" />
+</menu>
